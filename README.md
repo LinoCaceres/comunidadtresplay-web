@@ -1,2 +1,2 @@
 # comunidadtresplay-web
-Sitio web de Comunidad tress Play
+Sitio web de Comunidad tres Play
