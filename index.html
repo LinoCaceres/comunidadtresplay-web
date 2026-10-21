@@ -25,7 +25,8 @@
   .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
   .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
   .k{font-size:13px;color:var(--muted);margin:0 0 4px}
-  .v{margin:0;font-weight:600;word-break:break-word}
+  .v{margin:0;font-weight:600;overflow-wrap:normal;word-break:normal}
+  .nw{white-space:nowrap}
   a{color:var(--accent);text-decoration:none}
   a:hover{text-decoration:underline}
   footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
@@ -42,15 +43,16 @@
   <h2>Datos de red</h2>
   <div class="grid">
     <div class="card"><p class="k">Sistema autónomo</p><p class="v"><a href="https://query.milacnic.lacnic.net/search?id=AS265804" rel="noopener">AS265804</a></p></div>
-    <div class="card"><p class="k">Registro regional</p><p class="v">LACNIC · AR-COPL-LACNIC</p></div>
+    <div class="card"><p class="k">Registro regional</p><p class="v">LACNIC · <span class="nw">AR&#8209;COPL&#8209;LACNIC</span></p></div>
     <div class="card"><p class="k">Miembro desde</p><p class="v">Octubre de 2013</p></div>
+    <div class="card"><p class="k">Responsable</p><p class="v">Lino A. Cáceres</p></div>
   </div>
 
   <h2>Contacto</h2>
   <div class="grid">
-    <div class="card"><p class="k">General</p><p class="v"><a href="mailto:info@comunidadtresplay.com">info@comunidadtresplay.com</a></p></div>
-    <div class="card"><p class="k">NOC / operación de red</p><p class="v"><a href="mailto:noc@comunidadtresplay.com">noc@comunidadtresplay.com</a></p></div>
-    <div class="card"><p class="k">Abuso / seguridad</p><p class="v"><a href="mailto:info@comunidadtresplay.com">info@comunidadtresplay.com</a></p></div>
+    <div class="card"><p class="k">General</p><p class="v"><a href="mailto:info@comunidadtresplay.com">info<wbr>@comunidadtresplay.com</a></p></div>
+    <div class="card"><p class="k">NOC / operación de red</p><p class="v"><a href="mailto:noc@comunidadtresplay.com">noc<wbr>@comunidadtresplay.com</a></p></div>
+    <div class="card"><p class="k">Abuso / seguridad</p><p class="v"><a href="mailto:info@comunidadtresplay.com">info<wbr>@comunidadtresplay.com</a></p></div>
   </div>
 
   <footer>© <span id="y">2026</span> Comunidad 3 Play · Isidro Casanova, Buenos Aires, Argentina</footer>
