@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Comunidad 3 Play</title>
+<meta name="description" content="Comunidad 3 Play — infraestructura y recursos de red en Buenos Aires, Argentina, desde 2013. AS265804.">
+<style>
+  :root{
+    --bg:#f7f7f4; --fg:#16181d; --muted:#5d6370; --line:#dcdcd6; --accent:#0a7cbd; --card:#ffffff;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#0f1115; --fg:#e8e9ec; --muted:#9aa0ab; --line:#262a33; --accent:#4fb3ee; --card:#161921; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);
+       font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  .wrap{max-width:760px;margin:0 auto;padding:56px 20px 40px}
+  header{border-bottom:1px solid var(--line);padding-bottom:28px;margin-bottom:32px}
+  .mark{display:inline-flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.02em}
+  .dot{width:12px;height:12px;border-radius:50%;background:var(--accent);box-shadow:16px 0 0 var(--accent),32px 0 0 var(--accent);margin-right:32px}
+  h1{font-size:clamp(28px,6vw,40px);line-height:1.15;margin:18px 0 8px;font-weight:700}
+  .lead{color:var(--muted);font-size:18px;margin:0}
+  h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:36px 0 12px;font-weight:600}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
+  .k{font-size:13px;color:var(--muted);margin:0 0 4px}
+  .v{margin:0;font-weight:600;word-break:break-word}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="mark"><span class="dot" aria-hidden="true"></span>COMUNIDAD 3 PLAY</div>
+    <h1>Infraestructura y recursos de red</h1>
+    <p class="lead">Organización miembro de LACNIC desde 2013, con base en Isidro Casanova, Buenos Aires, Argentina.</p>
+  </header>
+
+  <h2>Datos de red</h2>
+  <div class="grid">
+    <div class="card"><p class="k">Sistema autónomo</p><p class="v"><a href="https://query.milacnic.lacnic.net/search?id=AS265804" rel="noopener">AS265804</a></p></div>
+    <div class="card"><p class="k">Registro regional</p><p class="v">LACNIC · AR-COPL-LACNIC</p></div>
+    <div class="card"><p class="k">Miembro desde</p><p class="v">Octubre de 2013</p></div>
+  </div>
+
+  <h2>Contacto</h2>
+  <div class="grid">
+    <div class="card"><p class="k">General</p><p class="v"><a href="mailto:info@comunidadtresplay.com">info@comunidadtresplay.com</a></p></div>
+    <div class="card"><p class="k">NOC / operación de red</p><p class="v"><a href="mailto:noc@comunidadtresplay.com">noc@comunidadtresplay.com</a></p></div>
+    <div class="card"><p class="k">Abuso / seguridad</p><p class="v"><a href="mailto:info@comunidadtresplay.com">info@comunidadtresplay.com</a></p></div>
+  </div>
+
+  <footer>© <span id="y">2026</span> Comunidad 3 Play · Isidro Casanova, Buenos Aires, Argentina</footer>
+</div>
+<script>try{document.getElementById('y').textContent=new Date().getFullYear()}catch(e){}</script>
+</body>
+</html>
